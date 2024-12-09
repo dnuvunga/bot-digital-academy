@@ -10,7 +10,7 @@ const client = new Client({
 
 // Função para enviar o QR Code para um número de WhatsApp
 const sendQRCodeViaWhatsApp = async (qrCodeImage) => {
-    const number = '258844577818@c.us'; // Substitua pelo número do destinatário no formato correto, com código do país
+    const number = '258844577818@c.us'; // Substitua pelo seu número no formato correto
     const chat = await client.getChatById(number);
     
     // Envia o QR Code como imagem
